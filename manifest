@@ -1,5 +1,5 @@
 # Name of the image and version
-name="dnsmasq-2.80"
+name="dnsmasq-minimal-2.80"
 
 # Build image to use for base of the image.  This image must
 # already exist in the ZFS hierarchy.
@@ -7,7 +7,7 @@ name="dnsmasq-2.80"
 base="minimal-64-lts-19.4.0"
 
 # Organization name (implanted in motd and product)
-organization="Joyent"
+organization="Itime"
 
 # Brand name (implanted in motd and product)
 brand="Instance"
@@ -28,4 +28,4 @@ role="development"
 minram=""
 
 # new image uuid
-manifest_uuid="15e44b6c-70e2-11ea-b9a3-df445767e6d1"
+manifest_uuid="bf8f90e4-70f2-11ea-b7b5-c3b3d4846d56"
