@@ -11,6 +11,7 @@ if /usr/sbin/mdata-get pkgsrc 1>/dev/null 2>&1; then
 else 
     if /usr/sbin/mdata-get pkgsrc_base 1>/dev/null 2>&1; then
         PKGSRC=$(/usr/sbin/mdata-get pkgsrc_base)
+        PKGSRC=${PKGSRC%*/}
         if sed -i "s|^https://pkgsrc.joyent.com|${PKGSRC}|" /opt/local/etc/pkgin/repositories.conf 1>/dev/null 2>&1; then
             sed -i "s|^PKG_PATH=https://pkgsrc.joyent.com|PKG_PATH=${PKGSRC}|" /opt/local/etc/pkg_install.conf;
         else
