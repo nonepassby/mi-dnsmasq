@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-if [[ /usr/sbin/mdata-get pkgsrc 1>/dev/null 2>&1 ]]; then
+if /usr/sbin/mdata-get pkgsrc 1>/dev/null 2>&1; then
     PKGSRC=$(/usr/sbin/mdata-get pkgsrc)
     BRAND=$(/usr/sbin/mdata-get sdc:brand)
     if [[ "${BRAND}" == "joyent-minimal" ]];then
