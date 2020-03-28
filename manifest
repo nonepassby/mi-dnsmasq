@@ -1,0 +1,31 @@
+# Name of the image and version
+name="dnsmasq-0.2.0"
+
+# Build image to use for base of the image.  This image must
+# already exist in the ZFS hierarchy.
+# base-64-x.x.x or minimal-64-x.x.x
+base="minimal-64-lts-19.4.0"
+
+# Organization name (implanted in motd and product)
+organization="Joyent"
+
+# Brand name (implanted in motd and product)
+brand="Instance"
+
+# Description of the image
+description="dnsmasq-2.80 based on minimal-64-lts 19.4.0"
+
+# Homepage specific to the image
+homepage="https://docs.joyent.com/images/smartos/dnsmasq"
+
+# Metadata users to be created (not real users created)
+users=""
+
+# Role of image (database, loadbalancer, development, hadoop, other, os)
+role="development"
+
+# Minimum amount of ram needed
+minram=""
+
+# new image uuid
+manifest_uuid="f1980266-3f78-11ea-9440-27176925a58d"

@@ -1,0 +1,7 @@
+dnsmasq-0.2.0
+* update base image: minimal-64-lts 19.4.0
+
+dnsmasq-0.1.0
+* Base image is minimal-64-19.3.0 (2019Q3)
+* Initial release
+* dnsmasq-2.80
