@@ -1,3 +1,8 @@
+dnsmasq-2.80
+* version update to dnsmasq
+* change motd
+* add manifest.json
+
 dnsmasq-0.2.0
 * update base image: minimal-64-lts 19.4.0
 

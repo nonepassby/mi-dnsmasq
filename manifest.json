@@ -1,0 +1,14 @@
+{
+  "name":         "dnsmasq",
+  "version":      "2.80",
+  "description":  "dnsmasq-2.80 based on minimal-64-lts 19.4.0",
+  "organization": "itime development",
+  "brand":        "Instance",
+  "homepage":     "https://github.com/nonepassby/mi-dnsmasq",
+  "customer_metadata": {
+    "admin_authorized_keys": {"type": "text", "description": "SSH public authorized key(s) for the admin user"},
+    "root_authorized_keys":  {"type": "text", "description": "SSH public authorized key(s) for the root user"},
+    "root_ssh_rsa":          {"type": "text", "description": "private SSH rsa key for root user"},
+    "root_ssh_rsa_pub":      {"type": "text", "description": "public SSH rsa key for root user (mostly not required)"}   
+  }
+}
