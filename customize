@@ -10,7 +10,7 @@ set -o errexit
 # Create Config dir
 mkdir /etc/dnsmasq.d
 
-sed -i '' 's|^#conf-dir=/etc/dnsmasq\.d/,\*\.conf|conf-dir=/etc/dnsmasq\.d/,\*\.conf|' /opt/local/etc/dnsmasq.conf
+gsed -i 's|^#conf-dir=/etc/dnsmasq\.d/,\*\.conf|conf-dir=/etc/dnsmasq\.d/,\*\.conf|' /opt/local/etc/dnsmasq.conf
 
 # Configuring image specific packages
 echo "* Configuring image specific packages.";
